@@ -83,14 +83,14 @@ int pressure = 15;
    }  
    void move(){
      if (exploded){
-       myX+=(int)(Math.random()*temp)-temp/2;
-       myY+=(int)(Math.random()*temp)-temp/2;
+       myX+=(int)(Math.random()*temp-temp/2);
+       myY+=(int)(Math.random()*temp-temp/2);
      }
      if (myX>300 && myX<700 && temp<45){
-     myX+=(int)(Math.random()*temp)-temp/2;
+     myX+=(int)(Math.random()*temp-temp/2);
      }
      if (myY>250 && myY<750 && temp<45){
-     myY+=(int)(Math.random()*temp)-temp/2;
+     myY+=(int)(Math.random()*temp-temp/2);
      }
      if (myX<=300 && temp<45 && !exploded){
        myX+=(int)(Math.random()*temp);
